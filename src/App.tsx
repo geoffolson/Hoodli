@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      Hello World
+      <div className="text-3xl font-bold underline">Hoodli</div>
       <div className="hero">
         <img src={heroImg} className="base" width="170" height="179" alt="" />
         <img src={reactLogo} className="framework" alt="React logo" />
