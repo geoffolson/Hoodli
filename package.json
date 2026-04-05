@@ -5,18 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "build": "tsc -b && prettier . --check && npm run lint && vite build",
+    "format": "prettier . --write",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.2",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "tailwindcss": "^4.2.2"
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "tailwindcss": "^4.2.2",
     "@babel/core": "^7.29.0",
+    "prettier": "^3.8.1",
     "@eslint/js": "^9.39.4",
     "@rolldown/plugin-babel": "^0.2.1",
     "@types/babel__core": "^7.20.5",
